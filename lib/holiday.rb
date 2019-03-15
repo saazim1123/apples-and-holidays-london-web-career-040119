@@ -32,6 +32,7 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
+<<<<<<< HEAD
     holiday_hash.each do |season, holidays|
     puts "#{season.to_s.capitalize}:"
     
@@ -39,13 +40,24 @@ def all_supplies_in_holidays(holiday_hash)
     puts "  #{holiday.to_s.split("_").collect{|s| s.capitalize}.join(" ")}: #{supplies.join(", ")}"
     
    
+=======
+  
+  holiday_hash.each do |season, holidays|
+    puts "#{season}"
+    
+    holidays.each do |holiday, supplies|
+    puts "  #{holiday.to_s.split("_").collect{|s| s.capitalize}.join(" ")}: #{supplies.join(", ")}"
+>>>>>>> 4117785cc6936294babf550f4f69ccefddb02e1c
  
     
     end
   end
+<<<<<<< HEAD
 
       
 end
+=======
+>>>>>>> 4117785cc6936294babf550f4f69ccefddb02e1c
 
 def add_supply_to_memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
